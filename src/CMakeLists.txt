@@ -114,3 +114,7 @@ if(PLATFORM_NAME MATCHES "linux")
         install(FILES ${OPENVR_PC} DESTINATION "${INSTALL_PKGCONFIG_DIR}")
     endif()
 endif()
+
+# CBN specific preprocessors
+add_compile_definitions(VR_API_PUBLIC)
+add_compile_definitions(OPENVR_BUILD_STATIC)
